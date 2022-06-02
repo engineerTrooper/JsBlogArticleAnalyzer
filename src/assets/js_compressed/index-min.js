@@ -1,0 +1,1 @@
+function analyze(){var e=document.getElementById("text").value,t=e.length;" "==e[t-1]&&(t=(e=e.slice(0,t-1)).length);var n=e.replaceAll(" ","").length,l=e.split(" ").length;document.getElementById("wordCount").innerHTML="Word Count: "+l,document.getElementById("letterCount").innerHTML="Letter Count: "+t,document.getElementById("spaceCount").innerHTML="Space Count: "+(t-n)}
