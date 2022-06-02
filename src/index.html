@@ -17,8 +17,9 @@
     
         <title>JsBlogArticleAnalyzer</title>
     
-        <link rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');" <link="" href="https://localhost/JsBlogArticleAnalyzer/src/assets/css_compressed/normalize.css">
-        <link rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');" <link="" href="https://localhost/JsBlogArticleAnalyzer/src/assets/css_compressed/index.css">
+        <link rel="stylesheet" href="https://localhost/JsBlogArticleAnalyzer/src/assets/css_compressed/normalize.css">
+        <link rel="stylesheet" href="https://localhost/JsBlogArticleAnalyzer/src/assets/css_compressed/index.css">
+        <script src="https://localhost/JsBlogArticleAnalyzer/src/assets/js_compressed/index-min.js"></script>
 
         <noscript>
             <p style="color: red; font-weight: bold;">Your Webbrowser is blocking JavaScript! Please enable JavaScript to make sure the website that you visit is working correctly!</p>        
@@ -31,9 +32,14 @@
         </header>
         <main>
             <form>
-                <textarea autofocus wrap="hard" placeholder="Add your text here"></textarea>
-                <input type="submit" value="Analyze">
+                <textarea id="text" autofocus wrap="hard" placeholder="Add your text here"></textarea>
+                <button onclick="analyze()" type="button">Analyze</button>
             </form>
+            <div id="analytics">
+                <p id="wordCount">Word Count: 0</p> 
+                <p id="letterCount">Letter Count: 0</p> 
+                <p id="spaceCount">Space Count: 0</p> 
+            </div>
         </main>
         <footer>
             <a href="https://engineertrooper.com/en-us/software/jsblogarticleanalyzer" target="_blank">Offical Website</a>
