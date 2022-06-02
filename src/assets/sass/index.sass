@@ -1,0 +1,48 @@
+@use "color"
+@use "grid"
+@use "shadow" 
+    
+html
+    font-size: grid.$fsize-default
+
+body
+    max-width: grid.$default-max-width
+    min-width: grid.$default-min-width
+    margin: 0 auto
+    padding: 4px
+    font-family: grid.$fofa-default
+    background: color.$default-background-white
+
+h1
+    font-size: grid.$fsize-headline-small
+
+p,
+a,
+textarea
+    font-size: grid.$fsize-normalPlusPlus
+    
+span
+    font-size: grid.$fsize-normal
+
+header
+    width: 100%
+    padding: 0 0 24px 0
+    text-align: center
+    h1
+        text-align: center
+    
+main
+    form
+        margin: 0 12%
+        textarea
+            width: 100%
+            min-height: 320px
+            margin-bottom: 16px 
+
+            resize: none
+
+footer
+    width: 100%
+    text-align: center
+    a
+        margin: 0 12px
